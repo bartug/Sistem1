@@ -1,0 +1,93 @@
+if [ koşul ] 
+ then 
+        bişiler
+elif [ koşul ]
+ then
+        bişiler
+else 
+    bişiler
+fi
+
+-lt:<
+-eq: ==
+-gt: > 
+[ $y -gt 3 ] gibi
+man sq
+
+#Katar karsılastırma için operatörler
+#katar = birden fazla karakterin bir araya gelmesyle oluşan karakter bütünüdür
+#-n katar (katar boyu 0 değilse dorudur)
+#-z katar (katarın boyu 0 ise doğrudur)
+#katar (katarın boyu 0 değil ise doğrudur)
+#katar1 == katar2 ( katarlar eşit ise doğrudur)
+#katar1 != katar2 (katarlar birbirinden farklı ise doğrudur)
+#katar1 < katar2 ( katar1 katar2 den küçük ise doğrudur)
+#katar1 > katar2 ( katar 1 katar2 den büyük ise doğrudur)
+#s1 -eq s2 ( syılar eşit ise doğrudur)
+#s1 -ne s2 ( sayılar eşit değil ise doğrudur)
+#s1 -gt s2 ( s1 s2 den büyük ise doğrudur)
+#s1 -lt s2 ( s1 s2 den küçük ise doğrudur)
+#s1 -ge s2 ( s1 s2den büyük veya eşit ise doğrudur)
+#s1 -le s2 ( s1 s2 den küçük veya eşit ise doğrudur)
+#ifade1 -a ifade2 ( ifade1 ve ifade 2 ise doğrudur)
+# ifade1 -o ifade2 (ifade1 veya ifade2 ise doğrudur)
+#!fade1 ( ifade1 değil ise doğrudur)
+
+
+
+
+
+
+
+for :/
+kelimeler = " ali ad asd asd " 
+for isim in $kelimeler
+do
+    echo $isim
+done
+
+
+for i in {1..1000}
+do
+    echo $i
+done
+
+
+read x 
+echo $x ==> kullanıcıdan değer alıp yazdırdım
+
+while [ $x -le 1000 ]
+do
+    echo ..
+    x=expt $x +1
+    (x++)
+done
+
+case değişkeni
+
+case $değişken in
+    bişi)   
+        echo "lalla"
+        ;;
+    dişi)
+        echo "lele"
+        ;;
+    *)
+        echo "huhu"
+        $0 : kendini cagrır 
+        ;;
+esac
+
+
+$0 :komutun veya scriptin kendisi
+$1:-$9 alınan parametrelerin saklandıgı segiskenler
+$#:kaç tane parametre varsa onu ifade ediyor
+$?:en son programın çıkış durumnu
+$$:çalışan kabuğun süreç numarasını gösterir
+
+
+
+
+
+
+

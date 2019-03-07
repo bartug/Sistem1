@@ -1,0 +1,29 @@
+Tekrar:
+ping
+traceroute
+whois
+iftop
+ip
+netcat
+mtr
+route
+ethtool
+ifconfig
+netstat
+
+DNS
+domain name system
+
+/etc/resolv.conf
+
+a=> ýp
+AAAA=>ýpv6
+mx=> eposta sunucullarý
+ns=>alan adý dns sunucularý
+cname=>
+bunlarýn hepsinin baþýna dig yazýð dig  mx google.com gibi yazýyom
+
+nslookup hostname :ip adresini verir 
+host ipadress : bi mail sunucusýnda ip adresi ile domain adresini kýyaslar
+
+cd

@@ -1,0 +1,14 @@
+tekrar:
+apt-get update,upgrade,install,remove,purge
+apt-cache search,policy,showpkg
+centos için==>
+yum install,search,update,remove,reolist,history
+
+
+
+
+
+
+
+
+

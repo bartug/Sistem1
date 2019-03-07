@@ -1,0 +1,42 @@
+scp
+scp root@192.168.56.101:/home/kullanici/a.txt ~/b.txt(dosyanın adını değiştirdim) 
+oraya bağlandım dosyayı aldım kendi dizinime
+
+scp resolv.conf kullaniciadi@ipadresi:/home/kulllanciadi dosyayı oraya göndermek
+
+scp -r root@ipadresi:/dosyaneredeyseora/dosyaadı /nereyeçekceksenora
+
+rysnc : sende olan dosyayla karsılastırıp eksik belgeleri ola kısımları çeker sadece
+
+rysnc -a kaynak-dizin hedef-dizin
+-r:recursive=>alt dizinleri ve dosyalarıda arşivler
+-l:links=>sembolik linkleride arşivler
+-p:perms=>kaynak dosyanın izinlerini hedef dosyada korur
+-t:times=>değiştirilme zamanlarını hedefdosyada korur.
+-g:preserve group=>dosyanın grubunu hedef dosyada korur
+-o:owner=> dosyanın sahibini hedef dosyada korur
+-D : --devices,--specials
+--devices=>cihaz dosyalarını da c,b hedefe aktarır
+--specials=>özel dosya tiplerinide s,p hedefe aktarır
+
+crontab -e : bir görev atar zaman belirterek o işlemi daha sonra yaptırır
+     
+
+/etc/crontab
+crontab -e dk saat gün ay verip ne yapacagımı yazarım!
+*/2 * * * * echo "sa" >> dosyaya ==> 2 dk dabir belirlicegim dosyaya sa yazdırırırm
+
+* * * * * 
+1.*=dakika
+2.*=saat
+3.*=ayn günleri
+4.=ay
+5.*=haftanın günler pazar=0yada7 
+--------------------------------
+printenv
+exptr
+let "adokad+okfdk" şeklinde stringleri int yapıyor terminalde işlem yaptırıyor
+bc = hesap makinası quit ile çıkar!
+
+nano ile girdiğim dosyada #! ile yorumlayacağını belirtiyorum
+

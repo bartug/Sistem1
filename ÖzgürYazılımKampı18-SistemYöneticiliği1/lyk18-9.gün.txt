@@ -1,0 +1,114 @@
+
+
+
+tou	fsck: linux dosya sistemini kontrol eder düzeltir.
+
+mount -h:yardým iletisi
+mount -lt: tiplerine göre listelemek
+
+tar:
+arþivleme yapar :: tar -cvf tardeneme.tar /home/bartugsevindik/ziplenmisler/ ;ziplenmiþler dizinini arþivledim!
+-c arþýv oluþturma 
+-d arþiv ile dosyasistemi arasýndaki fark
+-f:dosya haline getirir
+-t:arþiv içeriðini listeler
+-x:arþivdeki dosyalarý çýkartýr
+-r:arþivin içine dosya atmayý saðlar
+
+gzip:  gzip dosyadi
+sýkýþtýrma yapar
+-k:orjinal dýsyayý deðiþmeden sýkýþtýrýr /-9 da centosta
+-d:geri açar
+-a:ascii
+-h:help
+
+bzip2: bzip2 dosyadi
+sýkýþtýrma
+bunzip2 dosyadai :sýkýstýrmadan çýkarq
+bzim2 -d dosyadi:sýkýstýrmadan çýkarýr
+
+
+zip: zip dosyazip ziplecek/ziplenecek
+unzip ziplenenler.zip
+cd ~
+xz: 
+sýkýþtýrma yapar
+xz dosyaadi 
+xz -d dosya.xz ile çýkarýrým
+xz -k dosya : dosyanýn içeriðini ayný tutar bide zipler
+xz -k9 dosyadi: daha sýký sýkýþtýrýraynýsýndanda tutar!
+
+
+**Dosya içinde ne kadar tekrarlanýyorsa o kadar çok sýkýþtýrýlýr **
+
+dd if=/dev/zero of=dosyadi count=10M(boyutu) bs=1 deneme=6 bundan deneme7 büyük boyutlu 100M
+          /urandom deneme8=bundan
+DD=data duplicate
+if-kaynak
+of-hedef
+bs-blok sizels -
+
+
+
+tar ödev araþivleme!!a
+
+
+wget: dosya indirmeye yarýyor,arka plan indirmesi   wget www.google.com gibi
+curl:url transferi,veri aktarýmý  , -o parametre, veri çeker içini gösterir(yani indirmeden bi koduna bakam)
+
+less:dosyayý okurken aþþaðý yukarý
+more:dosyayý okurken 
+
+users:aktif kullanýcýlarý görüntüler
+alt+ solsað oklarla kullanýcýlar arasý geçiþ
+
+
+
+NOt:kullanýcýya shell eklemek usermod --shell /bin/bash kullanýcýadý
+nano etc/sudoers e girerek sudo yetkisi veririm
+
+who -u yaparsam baðlý kullanýcý id lerini görürüm
+kill -9 idadress yazarsam sistemden atarým
+
+
+finger:kullanýcýlar hakknda bilgi
+chsh: kabuk deðiþtirir
+chfn: o andkai kullancý bilgilerini deðiþtirir
+
+find:dosya arar Boyut listelerff
+find dizin -name dosyadi
+find dizin -type dizinadi
+- size +-boyut
+-name  dosyadý
+-type  d(dizin),f(normal dosya),l(link),b(blok doyasý)
+-uid
+
+xargs:
+
+touch 'sleep 5'asda 5sn bekleyip dosyayý yaratýr 
+
+find / -name passwd -exec file {} \;
+
+find ~ -type d -execc chmod 655 {} \;
+
+
+TCP/IP : Transmission Control Protocol,Internet protocol
+UDP    : User Datagram protocol
+
+
+OSI referans modeli :
+Application ==> http https smtp pdp ftp
+Presentation ==> standart
+Session
+Transport ==>tcp vdp
+Network ==>ýpýpv4,ýpv6
+Data Link ==> enthernet wifi
+physical ==>isdn fiberoptik
+
+TCP/IP referans modeli:
+Application 192.168.1.1
+transport 
+ýnternet
+Link/network access/physical
+
+

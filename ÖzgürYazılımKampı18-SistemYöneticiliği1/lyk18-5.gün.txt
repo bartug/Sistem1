@@ -1,0 +1,81 @@
+sudoers file ==> visudo ile giriyorum
+-----------------------------------------
+1-standart girdi  0
+2- standart çıktı 1
+3-hata kanalı     2
+aşağıdakiler yönlendirme!. /etc> dosyadı yaptım dosyaadı içerisinde etc içindeki dosyalar var
+>- : dosya varsa direk bilgi içerisine yapıtırılır. Dosyanın içerisini siler 
+>>-: dosya varsa içine yazılmaz sonuna eklenir. Yoksa yeni dosya açar.
+
+
+ls -lR /proc 1>procCiktilar 2>procHatlaar : ciktilar ve hatalar dosyaları yapıp ayırdım
+wc:word counter
+wc -l : satır sayısı
+wc -w : kelime sayısı
+wc -m : karakter sayısı
+wc -c :byte sayısı = karakter sayısı
+
+ls -l / > dosyaadı ile kok dizini bir dosyaya yönlendirirdim 
+sonra wc dosyaadı diyerek satır kelime karakter sayısını görebilirdim.
+ls -l / | wc : dersem kok dizindeki wc işi direk gelir dosyaya yönlendirmeden olur!
+
+echo " lalalalalal" | wc : echo içindeki bilgiyi verir !
+
+grep:veri süzer ; cat /etc/passwd | grep bartugsevindik 
+dersem passwd den bartugsevindike ait dosyayı süzer gösterir
+
+--
+sort :sıralama 
+sort -r: sonucu terse yazdırır
+sort -o : sonucu dosyaya yazdırır
+sort -n :sayısal değere göre sıralar
+sort -d :sadece a-z 0-9 göre sıralar
+ | atarak süzgeç greb ve sıralama sort beraber kullanabilirim
+ls - l /etc | greb .conf | sort -k 9(9. sütunu sırala demek)
+
+head: dosyanın ilk istediğim satır,istediğim sayıda içeriği gösterir
+head -10 dosyaadi gibi..
+
+tail: dosyanın sondan istediğim satır,istediğim sayıda içeriğini gösterir
+
+ctrl+a=başa gelir imleç
+ctrl+u= satırı temizler
+ctrl+k=baştayken hepsinş siler
+ctrl+e=imleç en sona gider
+ctrl+r=historyden arama yapar
+historydeki komut rakamlarının basın !612 gbi atarsam o komudu çalıştırır
+
+alias bişi =" komut " : yaparsam yeni komut tanımlarım
+alias sa ="echo as"
+
+vi: dosyanın içine girmek
+çıkmak için = :q 
+:w= yazdıklarını kaydeder
+:qw = kaydet ve çık
+:q! = kaydetmeden çıkar
+
+	DEBİAN					
+    apt==>paketleri indirmek			
+    .deb						
+    dpkg ==> paket yöneticisi
+    
+apt-get : indirük
+apt-get update:güncellemeleri her paket için;paket depolarından son bilgileri çekmek 
+apt-get upgrade:güncellemek;güncelleme varsa onu yap gardaş
+apt-get remove:paket kaldırma
+apt-get install:indirmek
+apt-cache search paketadi:paket aramak
+apt-cache showpkg paketadı:paket bilgileri görüntüleme
+apt-get purge paketadi: paket ayar dosyaları ile birlikte silme
+
+CENTos
+
+yum==>paketleri indirmek
+.rpm ==>paket yöneticisi
+
+yum search paketadi:paket arama
+yum install paketadi:paket kurma
+yum remove paketadi:paket kaldırma
+yum repolist:paket depolarının listesi
+yum update :paketleri güncellemek
+yum history :paket kurulum geçmişi

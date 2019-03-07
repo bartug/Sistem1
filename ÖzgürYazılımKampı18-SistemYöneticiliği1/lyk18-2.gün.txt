@@ -1,0 +1,63 @@
+Özgür Yazýlým?
+			21.07.2018
+
+0-yazýlýmý çalýþtýrma özgürlüðü
+1-programý inceleme ve deðiþtirme özgürlüðü
+2-Daðýtým özgürlüðü
+3-Deððiþiklik yapaiblme özgürlüðü
+
+ls : bulundugumuz dizini listeler
+pwd: nerede olduugumu öðrenirim
+cd: gideceðim yeri burdan hareket ederim*.* cd .. üst dizine gider 
+logout/exit/ctrl+d:oturumdan çýkar
+su:switch user su kullanýcýadý(root)==>roota geçerim.
+tab.tamamlama
+ctrl-D:kabukdan çýkýþ
+ctrl-C yapýlan iþlemi keser
+Shift+pageup-pagedown:pencere yukarý aþþaðý yapar
+man: yanýna komutu yazarak (man cd)ne iþe yaradýðýný alabileceði parametreler açýklamalarý yazar
+
+ls -l : ile dosyanýn içine girip özellik tür boyut görebilirim
+girdiðime baþta yazan harfler
+d:dizin yani içine girilebilen dosya -dizin içinde dizin-
+l:link baþka yerdeki dosyanýn referansý
+c,b:char,block
+p	:pipe-sistemde çalýþan uygulamalarýn birbiri ile iletiþim saðladýðý dosya türü
+s:soketr
+
+ls çok parametre alýr*
+-l:daha fazla bilgi ver
+-h:Anlaþýlabilir boyutlar yaz
+-d:bulunduðu dizinin özellikleri
+-a:gizli dosyalarý gösterir
+-r:alt dizinleri göster
+-t: Deðiþtirme zamanlarýný göre listele
+
+touch:Var olan dosyanýn deðiþtirilme tarihini günceller,dosya yoksa boþ bir dosya oluþturur
+cat:dosyanýn içini yazdýrýr
+echo:ekrana metin yazdýrýr
+cp:dosya kopyalar, örneðin==> cp ~/.bashrc{kaynak dosya} ~/bashrc{hedef dosya}
+cp parametreleri:
+-R,r:Alt dizinler ile beraber kopyalar
+-a:Dosyayý metaverisi ile kopyalar
+-i:Üzerine yazma yaparken sor.
+
+mkdir:dosya veya dosyalarý taþýmak v/veya deðiþtirmek için
+mkdir dizin ismi ; touch dosya ismi (dizin içine dosya atamak)
+rm:siliyoooooor 
+rm -r: dizini siler
+rmdir:boþklasörü siler
+file : dosyanýn tipini söyler
+
+ls *:her þeyi yazdýrýr
+ls ?:tek bir karakter
+ls []:aralýklý sýnýrlandýrma
+cat /proc/cpuinfo: cpu bilgisi
+roottaiken:
+useradd ******* kullanýcý eklemek
+parola admin edilemeyecek kadar karmasýk hatýrlanabilecek kadar kolay olmalýdýr.
+
+
+
+
+

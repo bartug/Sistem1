@@ -1,0 +1,43 @@
+factorial()
+{
+    if [[ $1 -le 1 ]]
+    then
+        echo 1
+    else 
+        last=$(factorial $[$1-1])
+        exho $ (($1 * last))
+    fi
+}
+factorial $1 ==> dolar1 kullanıcıdan parametre alır
+
+
+
+yum install httpd
+status httpd.service
+systemct1 start status httpd.service
+systemct1 enable httpd.service
+sonra ip 169 liyi yazdık internete
+firewall-cmd --permanent --zone=public --add-service=http yazarak firewall kaldırıyoz
+
+yum mariadb-server mariadb
+ mysql_secure_installation
+systemctl start mariadb
+parola isticek veri tabanı için
+
+mysql -u root -p ile mariadb giriyorum
+
+show databases; : databeseleri gösterdi
+create database databaseismmi
+use databaseismi
+create table tabloismi (
+adi varchar(255),
+soyadi varchar(255));
+show tables
+INSERT INTO tableismi ('asa','adfa');
+yum install php php-mysql : php indirdim
+
+yum install epel-relase : phpmyadmin
+yum innstall phpmyadmin
+
+
+

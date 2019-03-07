@@ -1,0 +1,34 @@
+df
+Hash algorithm
+$1:md5
+$2:blowfish
+$5:sha256 bunlar þifreleme algortimalarý
+---------------------------------------------
+user2 kullanýcýsý sadece donanýmcýlar grubunun girebileceði bir dizin oluþtursun
+sadece donanýmcýlarýn okuyabileceði bir dosya oluþtursun. ve bunu /tmp içinde yapsýn 
+mkdir dizin olusturdum
+--
+tekrarlýyoruz :
+gpasswd grupadý -a kullanýcý adý : gruba kullanýcý eklemek
+useradd: kullanýcý eklemek
+passwd kullanýcýadý þifre eklemek
+chown kulanýcýadý:grupadý dosyaismi : dosyayý gruba yetki verirken 
+chown user2 user2
+chgrp grupadý dosyadý yapabilirim
+ **********************************
+pcaçýlma
+bios
+post check
+boot order
+boot flaq/önyükleyici
+mbr
+yazýlýmsal post check
+ihame servisleri                 *
+diðer servisler                  *
+grafik arabirim                  *
+**********************************
+
+etc/shadow incele?* iççerisinde þifrelenmiþþ dosya parolalar...
+chmod da -s dosyayý çalýþtýrýrken kim kullanýrsa kullansýn root kullanýyor gibi gösterir
+which komutlar
+whereis komular

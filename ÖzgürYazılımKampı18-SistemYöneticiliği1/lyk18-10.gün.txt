@@ -1,0 +1,8 @@
+traceroute www.gooogle.com : bizim attýgýmýz paketin yolunu verir
+ping : pingler
+ifconfig:makinamýzdaki baðlanw
+
+
+whois
+who.pm
+nc

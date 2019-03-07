@@ -1,0 +1,72 @@
+cat etc/passwd
+cat etc/group
+id kullanýcýadý
+thinkpadx230
+---------------
+useradd -g:kendi grubuna kullanýcý kaydý için
+useradd -d:home dizini veriyoruz
+useradd -s:shell için
+adduser   :her biþlgiyi vererek kayýt için
+useradd -f:kullanýcýya ömür veriyorum
+useradd -m: home dizini home/kullanýcý veriyorum
+gpasswd grupadý -a kullanýcý : þeklinde kullanýcýyý o gruba eklerim
+gpasswd -d username group name: kullanýcýyý o gruptan çýkarýrým.
+newgrp grupadý: ilk dahil oldugu grubu deðiþtirir
+----------------------
+/sbin:Sistemi Yönetmek için gerekli olan araçlar
+/media:Aygýtlarýn baðlandýðý dizin
+/root:Root kullanýcýsýnýn ev dizini
+/var:Çalýþma esnasýnda deðiþen veriler
+/opt:Dýþarýdan kurulan yazýlýmlar
+/run:Progrramlarýn çalýþmalarý ile iligli bilgiler
+/sys:Çekirdekle ve sistemle alakalý bilgiler
+/srv:Uygulamalarýn sunduðu dosyalar
+/losttfound:Hasarlý kayýp dosyalar
+/lib:kütüphane dosyalarý
+/lib32:kütüphane dosyalarý
+/vmlinuz:sýkýþtýrýlmýþ çekirdek dosyasý
+----------------------------
+df:disk alaný kullanýmýný gösterir
+df -h : daha düzgün boyulu gözükür
+df -a: her þeyi göserir Sözde dosya sistemleri
+df -T: dosya kullanýmýnýn türünüi gösterir
+
+du: her dosyanýn disk kullanýmý alt dizinlere de geçerek özetler
+du -h:daha düzgün boyutlu
+du -s:toplam boyutu gösterir
+					user grup others 
+
+-----------------------------------
+dosya önündeki drwx:
+yazýlabilir,okunabiklir,derlenebilir olmasý izinleir
+-rwxrwxrwx : ilk 3ü kullanýcý u ,ikinci üçlü grup g, 3. üçlü other için o, izinler
+x:1
+w:2
+r:4 bit olarak geçer chmod 644 dosya adý dersem bit karsýlýklarýna göre verir 111 dersem hepsine x verir 777 dersem hepsini ful verir
+chmod: kip bitlerini deðiþtirmek
+örnek:chmod u+x dosyadý : ilk3lüye(kullanýcý için)u ilk 3 demek x iznini verdirttim.
+izni tek tek yerine herkese verebilmek için a+w/x/r biri
+çýkarmak için -
+
+chown: dosyayý farklý kullanýcýya yollamak örneðin: chown 2.kullacý dosyaadý
+chgrp:grubunu deðiþtirir : chgrp kullanýcýadý dosyaadý
+
+umask eriþim haklarýmý görüyorum 777den umask sonucunu çýkarýrsam dosyada kalan yetkimi görürürm 022 geliyor
+666 demektir bu yani wrx den x harici basit dosyada -rw-rw-rw- olur
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

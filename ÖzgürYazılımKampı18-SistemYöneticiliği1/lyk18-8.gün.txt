@@ -1,0 +1,48 @@
+fdisk: disk bölümlendirme,disk bilgisi,okuma yazma,biçimlendirme
+
+fdisk /dev/sdb
+NTFS,rxt4,XFS
+==>m help tusu
+sonra n yaptýk
+p
+1 : enter
+t : ile dosya türüne giriyom L yapýnca listeleyip numarasýný seçiyorum
+
+dosya türleri arasýndaki farklarý nelerdir ?
+s ile S arasýndaki fark nelerdir?
+mkfs.dosyaformat /dev/sdb* formatlar dosyayyý
+
+lsblk: blog devices çýktýlarýný verir
+
+yum install epel-relase
+yum install ntfs-3g
+yum install ntfsprogs
+
+mount : bir dosya sistemini baðlar
+
+Boyut küçülüyorsa veri nasýl kayboluyor sýkýþtýma yöntemleri
+umount:dosya sistemini ayýrýr
+
+top: process leri gösterir /htop;
+r:running
+s:sleeping
+zombie kill edilmiþ hala duran
+stopped
+ps -aux:process id verir
+fg:
+bg:arka plana atar
+jobs:
+topda çýkan cpu ne iþe yarar?????*
+
+1)SIGHUP :Dinamik yapýlandýrma
+9)SIGKILL:sürece kapanma fýrsatý vermeden öldürür
+15)SIGTERM:sürecin iþletimini sonlandýrma
+19)SIGSTOP:süreci durdurma ctrl+z
+18)SIGCONT:durmuþ süreci geri baþlatýr
+
+
+sleep 5m   :. process 
+bg 		:. arka plana attým
+ps -A | grep sleep	:.id buldum
+jobs		aktif iþlere baktým kontrol
+kill -9 2352*ps -A ile buldugum id bu ..öldürdüm 
